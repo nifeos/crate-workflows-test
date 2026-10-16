@@ -11,6 +11,6 @@ jobs:
     permissions:
       contents: read
       security-events: write
-    uses: nifeos/crate-workflows/.github/workflows/check.yml@9d22036e3e35f165a2c2b7acfc8c552c74e2a9ad
+    uses: nifeos/crate-workflows/.github/workflows/check.yml@b44a45ae8eb1fde179380303f61aeade1a7bcb87
     with:
       targets: ''
