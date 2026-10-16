@@ -13,4 +13,4 @@ jobs:
       security-events: write
     uses: nifeos/crate-workflows/.github/workflows/check.yml@23546b71c46e3eba9020c675bf0e2223c1acf298
     with:
-      targets: '@TARGETS@'
+      targets: ''
