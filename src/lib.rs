@@ -13,7 +13,7 @@
 /// ```
 pub fn saturating_add_percent(a: u8, b: u8) -> u8 {
     let sum = a.saturating_add(b);
-    if sum>100 {100} else {sum}
+    if sum > 100 { 100 } else { sum }
 }
 
 #[cfg(kani)]
@@ -28,11 +28,6 @@ mod tests {
         assert_eq!(saturating_add_percent(60, 60), 100);
         // The saturating add, not only the clamp: 200 + 100 overflows u8 first.
         assert_eq!(saturating_add_percent(200, 100), 100);
-    }
-
-    #[test]
-    fn deliberately_failing() {
-        assert_eq!(1, 2);
     }
 
     #[test]
