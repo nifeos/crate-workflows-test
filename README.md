@@ -16,3 +16,4 @@ assert_eq!(crate_workflows_test::saturating_add_percent(60, 60), 100);
 
 - The crate proves the workflows, not the function. Nothing here is a claim about percentage
   arithmetic worth depending on.
+See [the missing file](GONE.md) for details.
