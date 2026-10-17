@@ -1,0 +1,3 @@
+# src/proofs.rs is compiled only under `--cfg kani`, which `cargo test` never sets, so no test can
+# catch a mutation of it. Kani and the falsification gate (proofs.yml) are what check that file.
+exclude_globs = ["src/proofs.rs"]
