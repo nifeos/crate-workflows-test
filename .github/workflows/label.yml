@@ -7,4 +7,4 @@ permissions:
   pull-requests: write
 jobs:
   label:
-    uses: nifeos/crate-workflows/.github/workflows/label.yml3d44e06c1cfab447e515250cd69fb23bca61cb43
+    uses: nifeos/crate-workflows/.github/workflows/label.yml@3d44e06c1cfab447e515250cd69fb23bca61cb43
