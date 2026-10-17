@@ -2,3 +2,4 @@
 #   src/lib.rs:4 # swapping the operand order is the same arithmetic
 # A line without a reason is refused, and a line naming a survivor that no longer exists is
 # refused too, so this list can only shrink by a diff that says why.
+src/lib.rs:16 # `sum > 100` to `sum >= 100` is the same function: at 100 both arms return 100
