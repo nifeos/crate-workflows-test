@@ -15,9 +15,12 @@ permissions:
 jobs:
   release:
     permissions:
-      contents: write
+      contents: read
       id-token: write
-    uses: nifeos/crate-workflows/.github/workflows/release.yml@91eb0a9d068dbaf6d63175c7fb0e7ec59fce9dc4
+    uses: nifeos/crate-workflows/.github/workflows/release.yml@30d26230faf82f54653cb302803edf2207f5392b
     with:
       version: ${{ inputs.version }}
       dry-run: ${{ inputs.dry-run }}
+    secrets:
+      NIFE_SMELTER_APP_ID: ${{ secrets.NIFE_SMELTER_APP_ID }}
+      NIFE_SMELTER_PRIVATE_KEY: ${{ secrets.NIFE_SMELTER_PRIVATE_KEY }}
