@@ -17,7 +17,7 @@ jobs:
     permissions:
       contents: write
       id-token: write
-    uses: nifeos/crate-workflows/.github/workflows/release.yml@3d44e06c1cfab447e515250cd69fb23bca61cb43
+    uses: nifeos/crate-workflows/.github/workflows/release.yml@91eb0a9d068dbaf6d63175c7fb0e7ec59fce9dc4
     with:
       version: ${{ inputs.version }}
       dry-run: ${{ inputs.dry-run }}
