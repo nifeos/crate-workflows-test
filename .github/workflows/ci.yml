@@ -10,11 +10,11 @@ on:
 permissions:
   contents: read
 jobs:
-  ci:
+  check:
     permissions:
       contents: read
       security-events: write
-    uses: nifeos/crate-workflows/.github/workflows/check.yml@30d26230faf82f54653cb302803edf2207f5392b
+    uses: nifeos/crate-workflows/.github/workflows/check.yml@d5ad7091019cae8122b0c673fd790936039485ea
     with:
       # Bare-metal targets the crate builds for, space-separated; empty for a host-only crate.
       targets: ''
