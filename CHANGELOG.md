@@ -6,6 +6,7 @@ sentence beside it.
 ## Unreleased
 
 - First version.
+- The callers pin `nifeos/crate-workflows@55978d1`, which adds gates for passive voice, history phrases and function length.
 
 ## BUGS
 
