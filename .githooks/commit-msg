@@ -3,7 +3,7 @@
 # model, because attribution is the rule everywhere this organization writes. Install with:
 #   git config core.hooksPath .githooks
 #
-# Ported from nife's hook of the same name.
+# Ported from the organization's main hook of the same name.
 
 set -eu
 

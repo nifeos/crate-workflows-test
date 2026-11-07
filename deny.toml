@@ -1,4 +1,4 @@
-# cargo-deny for a standalone nifeos crate: nife's policy without its exceptions. nife skips
+# cargo-deny for a standalone nifeos crate: the organization's main policy without its exceptions. It skips
 # rayon (it is in the kernel's dev graph), ignores an `rsa` advisory (the vendored TLS exercise
 # needs it), and allows the vendored tree's licenses. None of that exists here. When this file
 # needs an exception, the reason goes beside it, and the supply-chain job shows it on every run.
