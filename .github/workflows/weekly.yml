@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   weekly:
-    uses: nifeos/crate-workflows/.github/workflows/weekly.yml@7bea0f11d9da06ce6866e69337c77d67bc10930e
+    uses: nifeos/crate-workflows/.github/workflows/weekly.yml@d5d7f34d93dd1998cd4564bccfe6f21130ca5368
     with:
       fuzz: false
     secrets:
