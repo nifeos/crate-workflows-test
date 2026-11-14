@@ -1,0 +1,16 @@
+name: mutation
+on:
+  schedule:
+    # This repository's own weekday, tried at 08, 10 and 12 UTC. Print the line with
+    # `python3 helpers/mutation_plan.py schedule <repository name>` in the template checkout.
+    - cron: '42 8,10,12 * * 5'
+  workflow_dispatch:
+  # Canary only: this branch runs the full mutation run on push, because a workflow that is not
+  # on the default branch cannot be dispatched.
+  push:
+    branches: [pin-workspace-members-pr64]
+permissions:
+  contents: read
+jobs:
+  mutation:
+    uses: nifeos/crate-workflows/.github/workflows/mutation.yml33edf06b3d501f7c9ab34cf62edbb9e6ad6cd2ef
