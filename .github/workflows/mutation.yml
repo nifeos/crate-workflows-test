@@ -13,4 +13,4 @@ permissions:
   contents: read
 jobs:
   mutation:
-    uses: nifeos/crate-workflows/.github/workflows/mutation.yml33edf06b3d501f7c9ab34cf62edbb9e6ad6cd2ef
+    uses: nifeos/crate-workflows/.github/workflows/mutation.yml@33edf06b3d501f7c9ab34cf62edbb9e6ad6cd2ef
