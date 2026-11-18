@@ -1,0 +1,12 @@
+name: mutation
+on:
+  schedule:
+    # This repository's own weekday, tried at 08, 10 and 12 UTC. Print the line with
+    # `python3 helpers/mutation_plan.py schedule <repository name>` in the template checkout.
+    - cron: '42 8,10,12 * * 5'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mutation:
+    uses: nifeos/crate-workflows/.github/workflows/mutation.yml@a69ab4829b02cf7a357061e9fd32ce52ba058e12
