@@ -5,10 +5,10 @@
 [![license](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](https://github.com/nifeos/crate-workflows-test#license)
 [![minimum Rust version](https://img.shields.io/badge/rust-1.85%2B-blue.svg)](https://github.com/nifeos/crate-workflows-test/blob/main/Cargo.toml)
 
-The throwaway crate repository that proves the template: one function with two tests, one proof,
-and a falsification patch. Every shared workflow runs against this repository, from a release tag
-of nifeos/crate-workflows, and the repository is deleted after. Its release path is rehearsed with
-`dry-run` only; nothing here is published.
+The throwaway crate repository that proves the template: one function with its tests (run them
+with `cargo test`), one proof, and a falsification patch. Every shared workflow runs against this
+repository, from a release tag of nifeos/crate-workflows, and the repository is deleted after. Its
+release path is rehearsed with `dry-run` only; nothing here is published.
 
 ## EXAMPLES
 
